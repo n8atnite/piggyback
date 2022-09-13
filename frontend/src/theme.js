@@ -24,6 +24,11 @@ const theme = createTheme({
             darkprimary: '#5b3b40',
             primary: '#edbbc8'
         }
+    },
+    typography: {
+        fontFamily: [
+            'monospace'
+        ]
     }
 });
 
