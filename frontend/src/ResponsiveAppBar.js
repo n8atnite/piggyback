@@ -9,23 +9,19 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-const pages = ['Catalog', 'Deals', 'About' ];
-
-const ResponsiveAppBar = () => {
-
+const pages = ['Catalog', 'Deals', 'About'];
+export default function ResponsiveAppBar() {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
-            noWrap
             component="a"
             href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'cursive',
+              display: 'flex',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
@@ -33,24 +29,6 @@ const ResponsiveAppBar = () => {
             }}
           >
            PIGGYBACK.INK
-          </Typography>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'cursive',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            PIGGYBACK.INK
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -87,5 +65,3 @@ const ResponsiveAppBar = () => {
     </AppBar>
   );
 };
-
-export default ResponsiveAppBar;

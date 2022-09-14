@@ -3,11 +3,8 @@ import Button from '@mui/material/Button';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { ThemeProvider, useTheme } from '@mui/material/styles';
 
-// random sticker pack (10)
-// 20
-// 'https://images.unsplash.com/photo-1625768376503-68d2495d78c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80'
-
 export default function Product(props) {
+    // props -> name, price, imageurl
     const theme = useTheme();
     return (
         <ThemeProvider theme={theme}>
