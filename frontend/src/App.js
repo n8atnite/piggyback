@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 
 function App() {
   return (
-    <Container m='auto' bgcolor='gray'> 
+    <Container> 
       <Box sx={{
         display: 'flex',
         flexWrap: 'wrap',
