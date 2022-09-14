@@ -5,23 +5,30 @@ const theme = createTheme({
     palette: {
         primary: {
             main: '#edbbc8',
+            dark: '#5b3b40',
+            light: '#f49fac'
         },
         secondary: {
-            main: '#e2e6e4',
+            main: '#66786a',
         },
         info: {
             main: '#f5bea3',
         },
         neutral: {
-            main: '#66786a',
+            main: '#e2e6e4',
         },
         error: {
             main: '#d98e7d',
         },
+        text: {
+            darkprimary: '#5b3b40',
+            primary: '#edbbc8'
+        }
     },
-    text: {
-        primary: '#ffffff',
-        secondary: '#5394fc'
+    typography: {
+        fontFamily: [
+            'monospace'
+        ]
     }
 });
 
