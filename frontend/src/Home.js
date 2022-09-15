@@ -1,18 +1,18 @@
 import * as React from 'react';
-import { Box, Paper } from '@mui/material';
-import ResponsiveAppBar from './ResponsiveAppBar';
+import Box from '@mui/material/Box';
+import MainBar from './MainBar';
 
 export default function Home() {
-    return (
-      <>
-        <Paper elevation={1}>
-          <ResponsiveAppBar/>
-        </Paper>
-        <Box sx={{ height: '1200px'}}>
-          <p sx={{ color: 'text.primary', fontSize: 34 }}>
-            Call to Action
-          </p>
-        </Box>
-      </>
-    );
+  return (
+    <>
+      <Box sx={{bgcolor: "gray", p: 5}}>
+        <MainBar/>
+      </Box>
+      <Box sx={{ height: '1200px'}}>
+        <p sx={{ color: 'text.primary', fontSize: 34 }}>
+          Call to Action
+        </p>
+      </Box>
+    </>
+  );
 };

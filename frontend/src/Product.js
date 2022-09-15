@@ -23,7 +23,6 @@ export default function Product(props) {
                     color: 'primary.dark'
                 }}
             >
-
                 <Box
                     component='img'
                     src={props.imgurl}
