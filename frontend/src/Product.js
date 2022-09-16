@@ -16,7 +16,10 @@ export default function Product(props) {
                     justifyContent: 'center',
                     m: 1,
                     p: '10px',
-                    width: 420, 
+                    width: 420,
+                    [theme.breakpoints.down('sm')]: {
+                      width: 350
+                    }, 
                     bgcolor: 'white',
                     boxShadow: 1,
                     borderRadius: 2,
@@ -29,8 +32,8 @@ export default function Product(props) {
                     alt="product image" 
                     sx={{
                         bgcolor: 'white',
-                        width: 400,
-                        height: 400,
+                        width: 1,
+                        aspectRatio: '1/1',
                         borderRadius: 2,
                         objectFit: 'cover'
                     }}

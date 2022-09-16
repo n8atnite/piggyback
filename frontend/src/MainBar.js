@@ -32,6 +32,7 @@ export default function ResponsiveAppBar() {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
+            p: 2
           }} 
         >
           <Box
