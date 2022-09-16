@@ -1,10 +1,14 @@
 import * as React from 'react';
 import { Link } from "react-router-dom";
+
+// components
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { ThemeProvider, useTheme } from '@mui/material/styles';
-import Logo from './assets/logo512.png';
+
+// assets
+import Logo from '../assets/logo512.png';
 
 const styles = {
   barTextStyle: {
@@ -33,8 +37,7 @@ export default function ResponsiveAppBar() {
             alignItems: 'center',
             justifyContent: 'center',
             p: 2
-          }} 
-        >
+        }}>
           <Box
             component='a'
             href='/'
@@ -42,8 +45,7 @@ export default function ResponsiveAppBar() {
               width: 250,
               height: 250,
               textDecoration: 'none'
-            }}
-          >
+          }}>
             <Box 
               component='img'
               src={Logo}
@@ -51,8 +53,7 @@ export default function ResponsiveAppBar() {
               sx={{
                   width: 250,
                   height: 250
-              }}
-            />
+            }}/>
             <Typography
               variant='h6'
               sx={[styles.barTextStyle, {
@@ -60,8 +61,7 @@ export default function ResponsiveAppBar() {
                 bottom: 155,
                 right: 20,
                 transform: 'rotate(-3deg)',
-              }]}
-            >
+            }]}>
               PIGGYBACK.INK
             </Typography>
           </Box>
@@ -70,8 +70,7 @@ export default function ResponsiveAppBar() {
               display: 'flex',
               justifyContent: 'space-around',
               width: 0.6
-            }}
-          >
+          }}>
             {pages.map((page) => (
                 <Link style={{textDecoration: 'none'}} to={page.toLowerCase()}>
                   <Typography sx={[styles.barTextStyle, {mt: 2}]}>

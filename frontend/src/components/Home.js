@@ -11,8 +11,7 @@ export default function Home() {
         alignItems: 'center',
         textAlign: 'center',
         minHeight: '100vh'
-      }}
-    >
+    }}>
       <MainBar/>
     </Box>
   );

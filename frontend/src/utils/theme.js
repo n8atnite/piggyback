@@ -29,7 +29,7 @@ const theme = createTheme({
         fontFamily: [
             'monospace'
         ]
-    }
+    },
 });
 
 export default theme;
