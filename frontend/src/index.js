@@ -11,6 +11,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Donate from './components/Donate';
 import Catalog from './components/Catalog';
+import Checkout from './components/Checkout';
 import theme from './utils/theme';
 import styles from './utils/styles'
 
@@ -26,6 +27,7 @@ root.render(
             <Route path="/about" element={<About />} />
             <Route path="/shop" element={<Catalog />} />
             <Route path="/donate" element={<Donate />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </div>
       </ThemeProvider>,
