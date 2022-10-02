@@ -10,10 +10,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import Home from './components/Home';
 import About from './components/About';
 import Donate from './components/Donate';
-import Catalog from './components/Catalog';
+import Catalog from './components/Shop';
 import Checkout from './components/Checkout';
 import theme from './utils/theme';
-import styles from './utils/styles'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +20,7 @@ root.render(
     <BrowserRouter>
       <ThemeProvider theme={theme}>  
         <CssBaseline />
-        <div style={styles.bgStyle}>
+        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -29,6 +28,7 @@ root.render(
             <Route path="/donate" element={<Donate />} />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
+          <div style={theme.styles.bgStyle} />
         </div>
       </ThemeProvider>,
     </BrowserRouter>

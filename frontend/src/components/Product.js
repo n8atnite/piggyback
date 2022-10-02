@@ -45,7 +45,7 @@ export default function Product(props) {
                     <Box>{props.name}</Box>
                     <Box>${props.price}</Box>
                 </Box>
-                <Button color='inherit'>
+                <Button color='inherit' onClick={() => {props.addToCart();}}>
                     <AddShoppingCartIcon/>
                 </Button>
             </Box>

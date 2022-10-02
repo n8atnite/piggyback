@@ -58,7 +58,7 @@ export default function ResponsiveAppBar() {
         }}>
           {pages.map((page) => (
               <Link style={{textDecoration: 'none'}} to={'/' + page}>
-                <Typography component='h4' variant='inkbar' sx={{mt: 2}}>
+                <Typography component='h2' variant='inkbar' sx={{mt: 2}}>
                   {page} 
                 </Typography>
               </Link>
