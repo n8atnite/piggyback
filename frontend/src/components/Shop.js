@@ -1,4 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Link } from "react-router-dom";
+
+// components
 import Product from './Product';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -62,18 +65,20 @@ export default function Catalog() {
 
   return (
     <Container> 
-      <Button 
-        variant='contained'
-        sx={{
-          visibility: (show) ? 'visible' : 'hidden',
-          position: 'fixed',
-          right: '0.9vw',
-          mt: 0.5
-        }}
-      >
-        <ShoppingCartIcon/>
-        {cart.count}
-      </Button>
+      <Link style={{textDecoration: 'none'}} to={'/checkout'}>
+        <Button 
+          variant='contained'
+          sx={{
+            visibility: (show) ? 'visible' : 'hidden',
+            position: 'fixed',
+            right: '0.9vw',
+            mt: 0.5
+          }}
+        >
+          <ShoppingCartIcon/>
+          {cart.count}
+        </Button>
+      </Link>
       <Box sx={{
         display: 'flex',
         flexWrap: 'wrap',

@@ -10,11 +10,12 @@ import Typography from '@mui/material/Typography';
 import Logo from '../assets/logo512.png';
 
 const pages = ['shop', 'donate', 'about'];
-export default function ResponsiveAppBar() {
+export default function MainBar(props) {
   return (
     <Container>
       <Box
         sx={{
+          ...('sx' in props && props.sx),
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -58,7 +59,7 @@ export default function ResponsiveAppBar() {
         }}>
           {pages.map((page) => (
               <Link style={{textDecoration: 'none'}} to={'/' + page}>
-                <Typography component='h2' variant='inkbar' sx={{mt: 2}}>
+                <Typography component='h3' variant='inkbar' sx={{mt: 2}}>
                   {page} 
                 </Typography>
               </Link>
