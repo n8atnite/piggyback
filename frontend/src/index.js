@@ -30,7 +30,7 @@ root.render(
           </Routes>
           <div style={theme.styles.bgStyle} />
         </div>
-      </ThemeProvider>,
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
